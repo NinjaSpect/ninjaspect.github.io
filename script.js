@@ -1,5 +1,5 @@
 var signUp = document.getElementById("signup")
-var signUp = document.getElementById("login")
+var login = document.getElementById("login")
 var suBtn = document.getElementById("subtn")
 var closeModal = document.getElementById("close-modal")
 var usernameBox = document.getElementById("username-box")
@@ -11,9 +11,17 @@ suBtn.addEventListener("click", function () {
   //signUp.style.display = "block"
   signUp.classList.add("active")
 })
+suBtn.addEventListener("click", function () {
+  //signUp.style.display = "block"
+  login.classList.add("active")
+})
 closeModal.addEventListener("click", function () {
   //signUp.style.display = "none"
   signUp.classList.remove("active")
+})
+closeModal.addEventListener("click", function () {
+  //signUp.style.display = "none"
+  login.classList.remove("active")
 })
 usernameBox.addEventListener("click", function () {
   usernameBox.focus()
