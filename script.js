@@ -1,4 +1,5 @@
 var signUp = document.getElementById("signup")
+var signUp = document.getElementById("login")
 var suBtn = document.getElementById("subtn")
 var closeModal = document.getElementById("close-modal")
 var usernameBox = document.getElementById("username-box")
