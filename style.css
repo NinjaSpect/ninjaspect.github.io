@@ -336,6 +336,19 @@ img.close:hover {
     padding: 2vw 12.5% 2vw 12.5%;
     font-size: 3vw;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#beta {
+    padding: 2vw 12.5% 2vw 12.5%;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+#versions {
+    padding: 2vw 12.5% 2vw 12.5%;
+    font-size: 3vw;
+    display: flex;
     flex-direction: column;
 }
 .book-default {

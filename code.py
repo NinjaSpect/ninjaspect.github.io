@@ -3,6 +3,16 @@ import time
 import pygame, sys
 from pygame.locals import *
 import random
+import tkinter as tk
+import pandas as pd
+
+#Applicaiton
+app = {
+    "name": "Ninja Spect",
+    "version": 0.1,
+    "author": "https://github.com/NinjaSpect"
+    "strict_name": "ninjaspect"
+}
 
 pygame.init()
 print("Welcome")
