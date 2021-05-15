@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ninja Spect</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="../style.css">
-        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-        <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
-        <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css"/>
-    </head>
-    <body>
-        <div id="main">
-            <nav>
-                <div class="logo">
-                    <a href="" class="fluento">Ninja Spect Writing</a>
-                </div>
-                <div class="forms">
-                    <a href="#signup" id="subtn" class="round inverter">Sign Up</a>
-                    <a href="#login" id="libtn" class="round inverter">Log In</a>
-                </div>
-                <div class="menu">
-                    <a href="#main" class="fluento">Home</a>
-                    <a href="#dashboard" class="fluento">Dashboard</a>
-                    <a href="#progress" class="fluento">Progress</a>
-                </div>
-            </nav>
-            <div class="modal-right" id="signup">
-                <img src="../Icons/highlight_off_black_24dp.svg" class="close" id="close-modal">
-                <h1>Welcome to Ninja Spect</h1>
-                <div class="form-options">
-                </div>
-                <div class="details">
-                    <div id="username-box"><input type="text" id="username"></div>
-                    <div id="password-box"><input type="password" id="password"></div>
-                    <button type="submit" id="submit-form">Continue</button>
-                </div>
-            </div>
-            <div class="banner">
-                <div id="hooker">
-                    Writing
-                </div>
-                <div id="description">
-                    View your current Writing courses and check your stats to measure your improvement!
-                </div>
-                <button id="download" class="ripplebtn">Get Started</button>
-                <div id="graphic1">
-                    <img src="">
-                </div>
-            </div>
-            <div id="dashboard">
-                Dashboard
-                <a id="play" href="../games.html" class="dashbtn">
-                    Games
-                </a>
-                <a href="#rank" class="dashbtn">
-                    Rank
-                </a>
-                <a href="#mastery" class="dashbtn">
-                    Mastery
-                </a>
-            </div>
-            <div id="progress">
-                Progress
-                <div class="spinner">
-
-                </div>
-            </div>
+  <head>
+    <title>Ninja Spect Writing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"/>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css"/>
+  </head>
+  <body>
+    <div id="main">
+      <nav>
+        <div class="logo">
+          <a href="../index.html" class="fluento">Ninja Spect</a>
         </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="../script.js"></script>
-        <script src="script.js"></script>
-        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-        <script>
-            $(function() {
-                AOS.init();
-            });
-        </script>
-    </body>
+        <div class="forms">
+          <a href="#signup" id="subtn" class="round inverter">Sign Up</a>
+          <a href="#login" id="libtn" class="round inverter">Log In</a>
+        </div>
+        <div class="menu">
+          <a href="#main" class="fluento">Home</a>
+          <a href="#dashboard" class="fluento">Dashboard</a>
+          <a href="#progress" class="fluento">Progress</a>
+          <a href="#pages" class="fluento">Pages</a>
+        </div>
+      </nav>
+      <div class="modal-right" id="signup">
+        <img src="../Icons/highlight_off_black_24dp.svg" class="close" id="close-modal"/>
+        <h1>Welcome to Ninja Spect</h1>
+        <div class="form-options"></div>
+        <div class="details">
+          <span>Create a username</span>
+          <div id="username-box">
+            <input type="text" id="username" placeholder="Username"/>
+          </div>
+          <span>Create a password</span>
+          <div id="password-box">
+            <input type="password" id="password" placeholder="Password"/>
+          </div>
+          <div id="type-again-box">
+            <input type="password" id="type-password-again" placeholder="Type your password again"/>
+          </div>
+          <button type="submit" id="submit-form">Continue</button>
+          <span>Already have an account? <a href="#login">Login</a></span>
+        </div>
+      </div>
+      <div class="banner">
+        <div id="hooker">Writing</div>
+        <div id="description">
+          Write amazing documents with Ninja Spect Pages and view your current Writing courses and stats to measure your improvement!
+        </div>
+        <button id="download" class="ripplebtn">Get Started</button>
+        <div id="graphic1">
+          <img src=""/>
+        </div>
+      </div>
+      <div id="dashboard">
+        Dashboard
+        <a id="play" href="../games.html" class="dashbtn"> Games </a>
+        <a href="#rank" class="dashbtn"> Rank </a>
+        <a href="#mastery" class="dashbtn"> Mastery </a>
+      </div>
+      <div id="progress">
+        Progress
+        <div class="spinner"></div>
+      </div>
+      <div id="pages">
+        <a href="#" class="dashbtn"> Edit Documents </a>
+        <a href="#" class="dashbtn"> Management </a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      $(function () {
+        AOS.init();
+      });
+    </script>
+  </body>
 </html>
