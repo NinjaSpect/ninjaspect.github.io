@@ -357,6 +357,14 @@ img.close:hover {
     display: flex;
     flex-direction: column;
 }
+#showcase {
+    background-image: url(../Images/Ninja Spect Art 16 to 9);
+    background-position: center;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #e6e6fa;
+}
 .book-default {
     font-size: 1vw;
 }
