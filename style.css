@@ -177,7 +177,7 @@ span.ripple {
     top: calc(50% - 100px + 30px - 108px/2);
     right: 12.5%;
 }
-section {
+#section {
     display: flex;
     width: 100%;
     padding: 0 12.5% 0 12.5%;
